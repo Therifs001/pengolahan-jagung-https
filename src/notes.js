@@ -13,7 +13,7 @@ const notes = [
         "<li>Tambahkan garam dan butter cair sesuai selera.</li>",
         "<li>Sajikan popcorn dalam mangkuk dan nikmati!</li></ol>"
       ],
-      imageCover: "/images/popcorn.jpg",  // Path relatif ke gambar
+      imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/popcorn.jpg",
       category: "Corn"
     },
     {
@@ -29,7 +29,7 @@ const notes = [
         "<li>Setelah selesai dianyam atau dibentuk, jahit atau rekatkan bagian-bagian tas atau dompet.</li>",
         "<li>Biarkan kerajinan tangan tersebut kering dan siap digunakan atau dijual.</li></ol>"
       ],
-      imageCover: "/images/kerajinan.png",  // Path relatif ke gambar
+      imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/kerajinan.jpg",
       category: "Husk"
     },
     {
@@ -46,7 +46,7 @@ const notes = [
         "<li>Taburkan keju cheddar parut di atasnya untuk menambahkan rasa gurih.</li>",
         "<li>Sajikan Jasuke selagi hangat dan nikmati!</li></ol>"
       ],
-      imageCover: "/images/jasuke.jpg",  // Path relatif ke gambar
+      imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/jasuke.jpg",
       category: "Corn"
     }
   ];
