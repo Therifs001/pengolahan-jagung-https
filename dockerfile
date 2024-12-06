@@ -1,20 +1,23 @@
-# Gunakan image Node.js sebagai dasar
+# Gunakan image Node.js sebagai base
 FROM node:18
 
 # Set direktori kerja di dalam container
-WORKDIR /usr/src/app
+WORKDIR /app
 
-# Copy file package.json dan package-lock.json
+# Salin package.json dan package-lock.json
 COPY package*.json ./
 
-# Install dependensi aplikasi
+# Install dependencies
 RUN npm install
 
-# Copy sisa file aplikasi
+# Salin semua file aplikasi
 COPY . .
 
-# Set environment variable untuk port
-ENV PORT=3000
+# Set environment variable PORT ke 3000
+ENV PORT 3000
 
-# Jalankan aplikasi
-CMD ["npm", "start"]
+# Jalankan aplikasi menggunakan npm run start
+CMD ["npm", "run", "start"]
+
+# Expose port 3000
+EXPOSE 3000
