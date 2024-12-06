@@ -1,11 +1,11 @@
-// src/handler.js
-const notes = require('./notes'); // Data atau fungsi terkait catatan
+const recoms = require('./recoms'); // Data atau fungsi terkait rekomendasi
 
 module.exports = {
     getHome: () => {
         return { message: 'Welcome to Pengolahan Jagung!' };
     },
     getRecommendations: () => {
-        return notes; // Mengembalikan data rekomendasi atau catatan
+        return recoms; // Mengembalikan data rekomendasi
     }
 };
+
