@@ -6,7 +6,7 @@ const Inert = require('@hapi/inert');
 
 const init = async () => {
   const server = Hapi.server({
-  port: process.env.PORT || 8080,
+  port: process.env.PORT || 3000,
   host: '0.0.0.0', 
     
   });
