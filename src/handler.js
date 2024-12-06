@@ -1,11 +1,11 @@
-const recoms = require('./recoms'); // Data atau fungsi terkait rekomendasi
+const recoms = require('./recoms'); 
 
 module.exports = {
     getHome: () => {
         return { message: 'Welcome to Pengolahan Jagung!' };
     },
     getRecommendations: () => {
-        return recoms; // Mengembalikan data rekomendasi
+        return recoms; 
     }
 };
 
