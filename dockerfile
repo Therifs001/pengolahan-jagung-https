@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Set environment variable untuk port
-ENV PORT=8080
+ENV PORT=3000
 
 # Jalankan aplikasi
 CMD ["npm", "start"]
