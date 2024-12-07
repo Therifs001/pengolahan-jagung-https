@@ -6,9 +6,8 @@ const Inert = require('@hapi/inert');
 
 const init = async () => {
   const server = Hapi.server({
-  port: process.env.PORT || 3000,
-  host: '0.0.0.0', 
-    
+    port: process.env.PORT || 3000,
+    host: '0.0.0.0', 
   });
 
   await server.register(Inert);
@@ -18,7 +17,7 @@ const init = async () => {
     method: 'GET',
     path: '/images/{filename}',
     handler: (request, h) => {
-      const imagesPath = path.join(__dirname, '../images', request.params.filename);
+      const imagesPath = path.resolve(__dirname, 'images', request.params.filename); // Perbaikan path
       return h.file(imagesPath);
     },
   });
@@ -38,6 +37,14 @@ const init = async () => {
     path: '/recoms',
     handler: (request, h) => {
       const { active } = request.query;
+
+      if (!active) { // Tampilkan semua rekomendasi jika parameter tidak diberikan
+        return {
+          error: false,
+          message: 'Recommendations fetched successfully',
+          listRecoms: recoms,
+        };
+      }
 
       if (active !== '1' && active !== '0') {
         return h.response({
@@ -64,8 +71,15 @@ const init = async () => {
     path: '/recoms/{id}',
     handler: (request, h) => {
       const { id } = request.params;
-      const recommendation = recoms.find((recom) => recom.id === id);
 
+      if (isNaN(id)) { // Validasi jika ID bukan angka
+        return h.response({
+          error: true,
+          message: 'Invalid ID. ID must be a number.',
+        }).code(400);
+      }
+
+      const recommendation = recoms.find((recom) => recom.id === parseInt(id, 10)); // Konversi ke integer
 
       if (!recommendation) {
         return h.response({
@@ -87,4 +101,3 @@ const init = async () => {
 };
 
 init();
-
