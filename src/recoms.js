@@ -1,6 +1,6 @@
 const recoms = [
     {
-        id: 001,
+        id: 1,
         name: "Cara Membuat Popcorn",
         summary: "Langkah-langkah membuat popcorn yang renyah dan gurih",
         description: "<p>Popcorn adalah camilan yang terbuat dari biji jagung yang dipanaskan hingga meletus...</p>",
@@ -16,7 +16,7 @@ const recoms = [
         category: "Corn"
     },
     {
-        id: 002,
+        id: 2,
         name: "Pengolahan Kulit Jagung untuk Kerajinan Tangan",
         summary: "Cara membuat kerajinan tangan dari kulit jagung, seperti tas dan dompet",
         description: "<p>Kulit jagung yang biasanya terbuang begitu saja, ternyata memiliki banyak manfaat...</p>",
@@ -32,7 +32,7 @@ const recoms = [
         category: "Husk"
     },
     {
-        id: 003,
+        id: 3,
         name: "Cara Membuat Jasuke",
         summary: "Langkah-langkah membuat Jasuke (Jagung Susu Keju) yang lezat dan praktis",
         description: "<p>Jasuke adalah camilan yang terbuat dari jagung yang telah direbus atau dikukus...</p><p>Berikut adalah langkah-langkah membuat Jasuke yang lezat:</p>",
@@ -51,4 +51,3 @@ const recoms = [
 ];
 
 module.exports = recoms;
-
