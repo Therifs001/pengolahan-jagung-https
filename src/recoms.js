@@ -296,22 +296,25 @@ const recoms = [
     imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-fritters-with-lime-leaves.jpg",
     category: "Corn"
 },
-    {
-        id: 3,
-        name: "Pengolahan Kulit Jagung untuk Kerajinan Tangan",
-        summary: "Cara membuat kerajinan tangan dari kulit jagung, seperti tas dan dompet",
-        description: "Kulit jagung yang biasanya terbuang begitu saja, ternyata memiliki banyak manfaat. Salah satunya adalah untuk dijadikan kerajinan tangan. Kulit jagung yang telah dikeringkan dapat dianyam atau dibentuk menjadi berbagai macam produk, seperti tas, dompet, atau bahkan perhiasan. Selain itu, kerajinan dari kulit jagung juga ramah lingkungan karena menggunakan bahan alami yang mudah diperoleh.",
-        steps:[<ol><li> 
-            "Kumpulkan kulit jagung yang sudah kering.</li>",
-            "Potong kulit jagung sesuai bentuk yang diinginkan (misalnya, bentuk potongan kecil untuk anyaman).",
-            "angkai atau anyam kulit jagung menjadi bentuk tas atau dompet.",
-            "Jika perlu, tambahkan aksesoris atau cat untuk memberi warna pada kerajinan.",
-            "Setelah selesai dianyam atau dibentuk, jahit atau rekatkan bagian-bagian tas atau dompet.",
-            "Biarkan kerajinan tangan tersebut kering dan siap digunakan atau dijual."
-       </li></ol>],
-        imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/kerajinan.jpg",
-        category: "Husk"
-    },
+ {
+    id: 18,
+    name: "Boneka dari Kulit Jagung",
+    summary: "Langkah-langkah membuat boneka kreatif dari kulit jagung",
+    description: "Boneka dari kulit jagung adalah kerajinan tangan yang dibuat dengan memanfaatkan kulit jagung kering. Boneka ini bisa menjadi dekorasi yang unik dan ramah lingkungan. Membuat boneka dari kulit jagung juga menjadi salah satu cara untuk mendaur ulang bahan alami menjadi barang yang berguna.",
+    steps: [
+        "Siapkan bahan-bahan: kulit jagung kering, benang, lem, jarum, kain untuk pakaian boneka, dan aksesori tambahan seperti kancing atau pita.",
+        "Cuci dan keringkan kulit jagung, kemudian rapikan dan potong sesuai ukuran yang diinginkan.",
+        "Bentuk tubuh boneka dengan merangkai beberapa potongan kulit jagung, gunakan benang untuk mengikat bagian-bagian tubuh seperti kepala, badan, tangan, dan kaki.",
+        "Untuk membuat pakaian boneka, gunakan kain kecil yang dijahit atau direkatkan dengan lem pada tubuh boneka.",
+        "Gunakan kancing atau pita sebagai aksesoris tambahan untuk mempercantik boneka.",
+        "Pastikan semua bagian boneka menempel dengan kuat agar tidak mudah terlepas.",
+        "Selesaikan boneka dengan tambahan detail seperti wajah yang digambar dengan spidol atau cat, serta rambut dari bahan lain jika diinginkan.",
+        "Boneka dari kulit jagung siap untuk dipajang sebagai dekorasi atau diberikan sebagai hadiah kreatif."
+    ],
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-husk-doll.jpg",
+    category: "Husk"
+}
+
    
 ];
 
