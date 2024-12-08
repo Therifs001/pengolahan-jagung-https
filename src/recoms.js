@@ -1,53 +1,318 @@
 const recoms = [
     {
         id: 1,
-        name: "Cara Membuat Popcorn",
+        name: "Popcorn",
         summary: "Langkah-langkah membuat popcorn yang renyah dan gurih",
-        description: "<p>Popcorn adalah camilan yang terbuat dari biji jagung yang dipanaskan hingga meletus...</p>",
-        steps: [
-            "<ol><li>Siapkan bahan-bahan: jagung popcorn, minyak goreng, garam, dan butter (opsional).</li>",
-            "<li>Panaskan minyak dalam panci di atas api sedang.</li>",
-            "<li>Masukkan biji jagung popcorn dan tutup panci. Tunggu hingga terdengar suara meletus.</li>",
-            "<li>Setelah popcorn meletus, angkat panci dan biarkan beberapa detik untuk memastikan biji jagung telah meletus semuanya.</li>",
-            "<li>Tambahkan garam dan butter cair sesuai selera.</li>",
-            "<li>Sajikan popcorn dalam mangkuk dan nikmati!</li></ol>"
-        ],
+        description: "Popcorn adalah camilan yang terbuat dari biji jagung yang dipanaskan hingga meletus. Biji jagung ini memiliki struktur khusus yang menyebabkan mereka meletus saat dipanaskan, mengembang menjadi ringan dan kenyal. Popcorn sering kali dijadikan pilihan camilan di bioskop atau acara santai karena rasa gurihnya yang mudah disesuaikan dengan berbagai bumbu dan topping.Berikut adalah langkah-langkah membuat popcorn yang renyah dan gurih:",
+        steps: [<ol><li>
+            "Siapkan bahan-bahan: jagung popcorn, minyak goreng, garam, dan butter (opsional).",
+            "Panaskan minyak dalam panci di atas api sedang.",
+            "Masukkan biji jagung popcorn dan tutup panci. Tunggu hingga terdengar suara meletus.",
+            "Setelah popcorn meletus, angkat panci dan biarkan beberapa detik untuk memastikan biji jagung telah meletus semuanya.",
+            "Tambahkan garam dan butter cair sesuai selera.",
+            "Sajikan popcorn dalam mangkuk dan nikmati!"
+       </li></ol>],
         imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/popcorn.jpg",
         category: "Corn"
     },
+
+{
+    id: 2,
+    name: "Tepung Jagung",
+    summary: "Langkah-langkah membuat tepung jagung yang halus dan serbaguna",
+    description: "Tepung jagung adalah bahan dapur serbaguna yang terbuat dari biji jagung kering yang digiling halus. Tepung ini dapat digunakan untuk membuat berbagai macam makanan, mulai dari roti, kue, hingga sebagai bahan pengental saus. Proses pembuatan tepung jagung cukup sederhana dan dapat dilakukan di rumah dengan bahan dan alat yang mudah ditemukan.",
+    steps: [<ol><li>
+        "Siapkan biji jagung kering, pastikan biji bersih dan bebas dari kotoran.",
+        "Sangrai biji jagung di atas api kecil hingga aromanya harum dan teksturnya lebih renyah.",
+        "Biarkan biji jagung dingin setelah disangrai.",
+        "Giling biji jagung menggunakan blender atau alat penggiling khusus hingga menjadi bubuk halus.",
+        "Saring tepung jagung menggunakan ayakan untuk mendapatkan hasil yang lebih halus.",
+        "Simpan tepung jagung dalam wadah kedap udara agar tetap segar dan tahan lama."
+     </li></ol>],
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-flour.jpg",
+    category: "Corn"
+},
+{
+        id: 3,
+        name: "Jasuke",
+        summary: "Langkah-langkah membuat Jasuke (Jagung Susu Keju) yang lezat dan praktis",
+        description: "Jasuke adalah camilan yang terbuat dari jagung yang telah direbus atau dikukus.Berikut adalah langkah-langkah membuat Jasuke yang lezat:</p>",
+        steps: <ol><li>[
+            "Siapkan bahan-bahan: jagung manis (2-3 tongkol), susu kental manis, keju cheddar parut, dan margarin.",
+            "Rebus atau kukus jagung manis hingga matang, lalu serut biji jagung dari tongkolnya.",
+            "Panaskan margarin di wajan, kemudian tambahkan biji jagung yang telah diserut."
+            "Aduk hingga merata.",
+            "Pindahkan jagung yang telah hangat ke dalam wadah saji.",
+            "Tuangkan susu kental manis di atas jagung sesuai selera.",
+            "Taburkan keju cheddar parut di atasnya untuk menambahkan rasa gurih.",
+            "Sajikan Jasuke selagi hangat dan nikmati!"
+        </li></ol>],
+        imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/jasuke.jpg",
+        category: "Corn"
+    },
+{
+    id: 4,
+    name: "Keripik Jagung",
+    summary: "Langkah-langkah membuat keripik jagung yang renyah dan gurih",
+    description: "Keripik jagung adalah camilan yang terbuat dari adonan berbahan dasar jagung yang digoreng hingga renyah. Keripik ini sangat populer karena teksturnya yang garing dan rasanya yang gurih. Keripik jagung sering kali dijadikan teman makan saus atau bumbu tambahan seperti keju, cabai, dan rempah-rempah. Berikut adalah langkah-langkah membuat keripik jagung yang renyah dan gurih di rumah.",
+    steps: [<ol><li>
+        "Siapkan bahan-bahan: tepung jagung, tepung terigu, air hangat, garam, dan bumbu sesuai selera (cabai bubuk, bawang putih bubuk, atau rempah lainnya).",
+        "Campurkan tepung jagung, tepung terigu, garam, dan bumbu dalam mangkuk besar.",
+        "Tuangkan air hangat sedikit demi sedikit ke dalam campuran tepung sambil diuleni hingga membentuk adonan yang tidak lengket.",
+        "Giling adonan tipis menggunakan alat penggiling atau rolling pin.",
+        "Potong adonan menjadi bentuk segitiga kecil atau sesuai selera.",
+        "Goreng adonan dalam minyak panas hingga berwarna keemasan dan renyah.",
+        "Tiriskan keripik jagung di atas kertas minyak untuk menghilangkan kelebihan minyak.",
+        "Sajikan keripik jagung dalam wadah kedap udara atau langsung dinikmati bersama saus favorit."
+   </li></ol>],
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-chips.jpg",
+    category: "Corn"
+},
+{
+    id: 5,
+    name: "Puding Jagung",
+    summary: "Langkah-langkah membuat puding jagung yang lembut dan manis",
+    description: "Puding jagung adalah hidangan penutup yang lezat dengan tekstur lembut dan rasa manis alami dari jagung. Hidangan ini cocok untuk berbagai kesempatan, baik sebagai pencuci mulut maupun camilan ringan. Puding jagung mudah dibuat dengan bahan-bahan sederhana yang bisa ditemukan di rumah.",
+    steps: [<ol><li>
+        "Siapkan bahan-bahan: jagung manis (diserut), santan, gula pasir, tepung maizena, dan sedikit garam.",
+        "Blender jagung manis dengan sedikit air hingga halus, lalu saring untuk mendapatkan sari jagung.",
+        "Campurkan sari jagung dengan santan, gula pasir, dan garam dalam panci.",
+        "Panaskan campuran tersebut di atas api kecil sambil diaduk perlahan hingga mendidih.",
+        "Larutkan tepung maizena dengan sedikit air, lalu tuangkan ke dalam panci sambil terus diaduk hingga adonan mengental.",
+        "Angkat adonan dan tuangkan ke dalam cetakan puding. Biarkan dingin hingga mengeras.",
+        "Sajikan puding jagung dengan tambahan topping seperti kelapa parut, susu kental manis, atau buah sesuai selera."
+    </li></ol>],
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-pudding.jpg",
+    category: "Corn"
+},
+
+{
+    id: 6,
+    name: "Nugget Jagung",
+    summary: "Langkah-langkah membuat nugget jagung yang lezat dan bergizi",
+    description: "Nugget jagung adalah camilan sehat berbahan dasar jagung yang cocok untuk anak-anak maupun dewasa. Teksturnya yang lembut di dalam dan renyah di luar menjadikannya favorit banyak orang. Nugget jagung ini juga bisa dijadikan lauk pendamping nasi atau camilan praktis sehari-hari.",
+    steps: [<ol><li>
+        "Siapkan bahan-bahan: jagung manis (diserut), tepung terigu, tepung maizena, telur, bawang putih halus, keju parut, garam, merica, dan tepung panir untuk pelapis.",
+        "Campurkan jagung manis, tepung terigu, tepung maizena, telur, bawang putih, keju parut, garam, dan merica dalam mangkuk besar. Aduk rata hingga membentuk adonan.",
+        "Tuangkan adonan ke dalam loyang yang telah dialasi dengan kertas roti atau diolesi minyak.",
+        "Kukus adonan selama 20-30 menit hingga matang dan padat. Biarkan dingin.",
+        "Potong adonan sesuai bentuk dan ukuran yang diinginkan.",
+        "Celupkan potongan nugget ke dalam telur kocok, lalu gulingkan dalam tepung panir hingga terbalut rata.",
+        "Goreng nugget jagung dalam minyak panas hingga berwarna keemasan dan renyah.",
+        "Tiriskan nugget dan sajikan dengan saus sambal atau mayones sesuai selera."
+    </li></ol>],
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-nuggets.jpg",
+    category: "Corn"
+},
+{
+    id: 7,
+    name: "Es Krim Jagung",
+    summary: "Langkah-langkah membuat es krim jagung yang lembut dan segar",
+    description: "Es krim jagung adalah hidangan pencuci mulut yang menyegarkan dengan rasa manis alami dari jagung. Es krim ini memiliki tekstur lembut yang cocok untuk dinikmati di hari panas. Dengan bahan-bahan sederhana, Anda dapat membuat es krim jagung sendiri di rumah.",
+    steps: [<ol><li>
+        "Siapkan bahan-bahan: jagung manis (diserut), susu cair, gula pasir, whipped cream, kuning telur, dan vanila.",
+        "Blender jagung manis dengan sedikit susu hingga halus, lalu saring untuk mendapatkan sari jagung.",
+        "Panaskan sari jagung bersama susu cair dan gula di atas api kecil, aduk hingga gula larut.",
+        "Kocok kuning telur, lalu tuangkan sedikit campuran susu panas ke dalamnya sambil diaduk cepat. Tuangkan kembali campuran ini ke panci.",
+        "Masak adonan di atas api kecil sambil terus diaduk hingga mengental, tetapi jangan sampai mendidih. Angkat dan dinginkan.",
+        "Kocok whipped cream hingga mengembang, lalu campurkan dengan adonan yang telah dingin. Aduk rata.",
+        "Tuangkan adonan ke dalam wadah, tutup, dan masukkan ke freezer selama 1-2 jam hingga setengah beku.",
+        "Keluarkan adonan, kocok kembali untuk menghancurkan kristal es, lalu bekukan kembali. Ulangi proses ini 2-3 kali untuk hasil yang lembut.",
+        "Setelah es krim benar-benar beku, sajikan dengan topping favorit seperti jagung manis serut, cokelat cair, atau kacang."
+    </li></ol>],
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-ice-cream.jpg",
+    category: "Corn"
+},
+{
+    id: 8,
+    name: "Emping Jagung",
+    summary: "Langkah-langkah membuat emping jagung yang renyah dan gurih",
+    description: "Emping jagung adalah camilan tradisional yang terbuat dari biji jagung pipil yang diolah hingga menjadi keripik tipis dan renyah. Emping jagung sering disajikan sebagai camilan atau pelengkap hidangan seperti nasi goreng dan soto. Berikut langkah-langkah membuat emping jagung di rumah dengan mudah.",
+    steps: [<ol><li>
+        "Siapkan bahan-bahan: biji jagung pipil kering, garam, dan bumbu tambahan sesuai selera (cabai bubuk, keju bubuk, atau rempah lainnya).",
+        "Rebus biji jagung pipil kering hingga empuk, kemudian tiriskan.",
+        "Tumbuk biji jagung secara perlahan menggunakan alat tumbuk hingga pipih, tetapi tidak hancur.",
+        "Taburkan garam atau bumbu tambahan ke biji jagung yang telah ditumbuk.",
+        "Susun biji jagung yang telah pipih di atas nampan, lalu jemur di bawah sinar matahari hingga kering sempurna.",
+        "Panaskan minyak goreng, lalu goreng emping jagung hingga berwarna keemasan dan renyah.",
+        "Tiriskan emping jagung di atas kertas minyak untuk menghilangkan kelebihan minyak.",
+        "Simpan emping jagung dalam wadah kedap udara agar tetap renyah, atau langsung sajikan sebagai camilan gurih."
+    </li></ol>],
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-crackers.jpg",
+    category: "Corn"
+},
+{
+    id: 9,
+    name: "Salad Jagung",
+    summary: "Langkah-langkah membuat salad jagung yang segar dan sehat",
+    description: "Salad jagung adalah hidangan sehat yang menyegarkan, terdiri dari jagung manis yang dikombinasikan dengan sayuran segar dan dressing yang ringan. Salad ini cocok untuk makanan pembuka, menu diet, atau sebagai pelengkap hidangan utama. Rasanya yang manis, asam, dan segar membuat salad jagung menjadi pilihan yang menyehatkan sekaligus lezat.",
+    steps: [<ol><li>
+        "Siapkan bahan-bahan: jagung manis (direbus dan dipipil), tomat ceri (dipotong dua), mentimun (dipotong dadu), daun selada, paprika (diiris tipis), dan bawang merah (diiris tipis).",
+        "Campurkan semua bahan sayuran dalam mangkuk besar.",
+        "Siapkan dressing: campurkan minyak zaitun, perasan lemon, madu, garam, dan merica dalam wadah kecil. Aduk rata.",
+        "Tuangkan dressing ke atas campuran sayuran, lalu aduk hingga semua bahan tercampur rata.",
+        "Tambahkan topping seperti keju feta, biji wijen, atau kacang almond untuk tambahan tekstur dan rasa.",
+        "Sajikan salad jagung segera untuk mendapatkan rasa yang segar."
+    </li></ol>],
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-salad.jpg",
+    category: "Corn"
+},
+{
+    id: 10,
+    name: "Sup Jagung Jamur Enoki",
+    summary: "Langkah-langkah membuat sup jagung dengan tambahan jamur enoki yang segar dan lezat",
+    description: "Sup jagung jamur enoki adalah hidangan yang hangat dan bergizi, memadukan manisnya jagung dengan tekstur lembut jamur enoki. Hidangan ini cocok untuk disantap di cuaca dingin atau sebagai menu pembuka yang sehat. Dengan rasa yang ringan dan bahan-bahan sederhana, sup ini bisa dibuat dengan mudah di rumah.",
+    steps: [<ol><li>
+        "Siapkan bahan-bahan: jagung manis (dipipil), jamur enoki (dibersihkan dan dipotong ujungnya), wortel (dipotong dadu kecil), bawang putih (cincang), bawang bombai (cincang), kaldu ayam, tepung maizena (larutkan dengan sedikit air), garam, merica, dan daun bawang (iris tipis).",
+        "Panaskan sedikit minyak di panci, tumis bawang putih dan bawang bombai hingga harum.",
+        "Masukkan jagung, wortel, dan kaldu ayam ke dalam panci. Masak hingga sayuran setengah matang.",
+        "Tambahkan jamur enoki dan masak selama beberapa menit hingga jamur layu.",
+        "Tuangkan larutan tepung maizena ke dalam sup sambil diaduk perlahan hingga sup mengental.",
+        "Bumbui dengan garam dan merica sesuai selera.",
+        "Angkat sup, taburi dengan daun bawang sebelum disajikan.",
+        "Hidangkan sup jagung jamur enoki selagi hangat sebagai menu sehat dan lezat."
+    </li></ol>],
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-enoki-soup.jpg",
+    category: "Corn"
+},
+{
+    id: 11,
+    name: "Bubur Jagung Manis",
+    summary: "Langkah-langkah membuat bubur jagung manis yang lembut dan lezat",
+    description: "Bubur jagung manis adalah hidangan tradisional yang terbuat dari jagung manis yang dimasak dengan santan dan gula. Teksturnya yang lembut dan rasa manisnya yang khas menjadikannya cocok sebagai sarapan atau camilan sore. Hidangan ini sangat mudah dibuat dengan bahan-bahan sederhana.",
+    steps: [<ol><li>
+        "Siapkan bahan-bahan: jagung manis (dipipil), santan, gula pasir, garam, daun pandan, dan sedikit tepung maizena (larutkan dengan air).",
+        "Blender setengah bagian jagung manis dengan sedikit air hingga halus untuk mendapatkan sari jagung, sementara sisanya biarkan utuh.",
+        "Masukkan santan ke dalam panci bersama dengan jagung utuh, sari jagung, gula pasir, garam, dan daun pandan. Aduk rata.",
+        "Masak di atas api kecil sambil terus diaduk agar santan tidak pecah.",
+        "Tambahkan larutan tepung maizena ke dalam bubur untuk memberikan tekstur yang lebih kental.",
+        "Masak hingga jagung matang sempurna dan bubur mengental.",
+        "Angkat dan dinginkan sejenak.",
+        "Sajikan bubur jagung manis dalam mangkuk, bisa dinikmati hangat atau dingin."
+    </li></ol>],
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/sweet-corn-porridge.jpg",
+    category: "Corn"
+},
+{
+    id: 12,
+    name: "Bakwan Jagung",
+    summary: "Langkah-langkah membuat bakwan jagung yang renyah dan gurih",
+    description: "Bakwan jagung adalah camilan gurih yang terbuat dari campuran jagung manis, tepung, dan bumbu, digoreng hingga renyah. Hidangan ini populer di Indonesia sebagai camilan atau pelengkap hidangan utama. Bakwan jagung mudah dibuat dan cocok dinikmati kapan saja.",
+    steps: [<ol><li>
+        "Siapkan bahan-bahan: jagung manis (dipipil), tepung terigu, tepung beras, daun bawang (iris tipis), bawang putih (haluskan), telur, air, garam, dan merica.",
+        "Campurkan jagung manis, tepung terigu, tepung beras, daun bawang, bawang putih, garam, dan merica dalam satu wadah.",
+        "Tambahkan telur dan sedikit air, aduk hingga adonan tercampur rata dan memiliki konsistensi yang cukup kental.",
+        "Panaskan minyak dalam wajan.",
+        "Ambil satu sendok sayur adonan, lalu goreng dalam minyak panas hingga berwarna keemasan dan renyah.",
+        "Tiriskan bakwan jagung di atas kertas minyak untuk menghilangkan kelebihan minyak.",
+        "Sajikan bakwan jagung selagi hangat sebagai camilan atau pelengkap makan."
+    </li></ol>],
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-fritters.jpg",
+    category: "Corn"
+},
+{
+    id: 13,
+    name: "Corn Ribs",
+    summary: "Langkah-langkah membuat corn ribs yang gurih dan lezat",
+    description: "Corn ribs adalah hidangan modern berbasis jagung yang dipotong memanjang menyerupai iga, dibumbui, dan dipanggang hingga renyah. Hidangan ini menjadi tren karena bentuknya yang unik dan rasanya yang nikmat. Cocok sebagai camilan atau pendamping makanan utama.",
+    steps: [<ol><li>
+        "Siapkan bahan-bahan: jagung manis utuh, minyak zaitun, bubuk paprika, bawang putih bubuk, garam, merica, dan bumbu favorit lainnya (opsional).",
+        "Potong jagung menjadi empat bagian memanjang menggunakan pisau tajam. Berhati-hati saat memotong untuk menjaga bentuknya tetap utuh.",
+        "Campurkan minyak zaitun, bubuk paprika, bawang putih bubuk, garam, dan merica dalam mangkuk kecil untuk membuat bumbu oles.",
+        "Oleskan bumbu secara merata ke semua sisi potongan jagung.",
+        "Panaskan oven hingga 200°C atau siapkan air fryer.",
+        "Panggang jagung dalam oven atau air fryer selama 15-20 menit hingga jagung matang dan ujung-ujungnya renyah.",
+        "Angkat dan sajikan corn ribs dengan saus favorit seperti saus keju atau saus cabai."
+    </li></ol>],
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-ribs.jpg",
+    category: "Corn"
+},
+{
+    id: 14,
+    name: "Spicy Corn Ribs",
+    summary: "Langkah-langkah membuat spicy corn ribs dengan rasa pedas yang menggugah selera",
+    description: "Spicy corn ribs adalah varian corn ribs yang dibumbui dengan rasa pedas, menjadikannya hidangan yang lebih menggugah selera. Dengan bumbu pedas yang kaya, corn ribs ini cocok untuk penggemar makanan pedas. Hidangan ini sangat mudah dibuat dan dapat dinikmati sebagai camilan atau makanan pembuka.",
+    steps: [<ol><li>
+        "Siapkan bahan-bahan: jagung manis utuh, minyak zaitun, bubuk paprika, bubuk cabai, bawang putih bubuk, saus sambal, garam, merica, dan air jeruk nipis.",
+        "Potong jagung menjadi empat bagian memanjang dengan hati-hati.",
+        "Campurkan minyak zaitun, bubuk paprika, bubuk cabai, bawang putih bubuk, saus sambal, garam, merica, dan air jeruk nipis dalam mangkuk kecil untuk membuat bumbu pedas.",
+        "Oleskan bumbu pedas ke semua sisi potongan jagung hingga merata.",
+        "Panaskan oven hingga 200°C atau gunakan air fryer.",
+        "Panggang jagung dalam oven atau air fryer selama 15-20 menit hingga jagung matang dan bagian luar agak renyah.",
+        "Angkat dan sajikan spicy corn ribs dengan tambahan saus sambal atau saus keju jika suka."
+    </li></ol>],
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/spicy-corn-ribs.jpg",
+    category: "Corn"
+},
+{
+    id: 15,
+    name: "Sup Jagung Telur",
+    summary: "Langkah-langkah membuat sup jagung telur yang hangat dan menenangkan",
+    description: "Sup jagung telur adalah hidangan yang ringan dan bergizi, memadukan manisnya jagung dengan kelembutan telur. Sup ini sangat cocok dinikmati di waktu makan siang atau malam sebagai menu yang menenangkan dan menghangatkan tubuh.",
+    steps: [<ol><li>
+        "Siapkan bahan-bahan: jagung manis (dipipil), telur (kocok lepas), kaldu ayam, bawang putih (cincang halus), garam, merica, daun bawang (iris tipis), dan seledri (opsional).",
+        "Panaskan sedikit minyak dalam panci, tumis bawang putih hingga harum.",
+        "Masukkan kaldu ayam dan jagung manis ke dalam panci, masak hingga jagung mulai empuk.",
+        "Bumbui dengan garam dan merica secukupnya, lalu biarkan mendidih selama beberapa menit.",
+        "Tuangkan telur yang sudah dikocok perlahan ke dalam sup sambil diaduk perlahan hingga telur berbentuk serat-serat halus.",
+        "Setelah telur matang, angkat sup dari api.",
+        "Taburi dengan daun bawang dan seledri sebagai garnish sebelum disajikan.",
+        "Sajikan sup jagung telur selagi hangat sebagai hidangan penutup yang ringan atau makanan pembuka."
+    </li></ol>],
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-egg-soup.jpg",
+    category: "Corn"
+},
+{
+    id: 16,
+    name: "Sup Jagung Kelor",
+    summary: "Langkah-langkah membuat sup jagung dengan tambahan daun kelor yang sehat",
+    description: "Sup jagung kelor adalah hidangan sehat yang menggabungkan manisnya jagung dengan khasiat daun kelor. Hidangan ini sangat bergizi, dengan kandungan vitamin dan mineral yang baik untuk tubuh. Cocok untuk dijadikan menu harian yang menyehatkan.",
+    steps: [<ol><li>
+        "Siapkan bahan-bahan: jagung manis (dipipil), daun kelor segar, kaldu ayam atau kaldu sayuran, bawang putih (cincang halus), bawang merah (cincang), wortel (potong dadu), garam, merica, dan daun bawang (untuk taburan).",
+        "Panaskan sedikit minyak dalam panci, tumis bawang putih dan bawang merah hingga harum.",
+        "Masukkan kaldu ayam atau kaldu sayuran ke dalam panci, kemudian tambahkan jagung dan wortel. Masak hingga sayuran empuk.",
+        "Tambahkan daun kelor ke dalam sup dan masak selama 2-3 menit hingga daun kelor layu.",
+        "Bumbui dengan garam dan merica sesuai selera, aduk rata.",
+        "Angkat sup dan taburi dengan daun bawang iris sebelum disajikan.",
+        "Sajikan sup jagung kelor selagi hangat, nikmati hidangan sehat ini sebagai pelengkap makan."
+    </li></ol>],
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-moringa-soup.jpg",
+    category: "Corn"
+},
+{
+    id: 17,
+    name: "Perkedel Jagung Daun Jeruk",
+    summary: "Langkah-langkah membuat perkedel jagung dengan sentuhan daun jeruk yang harum",
+    description: "Perkedel jagung daun jeruk adalah camilan gurih yang terbuat dari jagung manis dan bumbu rempah, ditambah dengan aroma harum daun jeruk yang memberi rasa segar. Perkedel ini cocok disajikan sebagai camilan atau lauk pendamping nasi.",
+    steps: [<ol><li>
+        "Siapkan bahan-bahan: jagung manis (dipipil), daun jeruk (cincang halus), tepung terigu, tepung beras, bawang merah (haluskan), bawang putih (haluskan), garam, merica, daun bawang (iris tipis), dan telur.",
+        "Campurkan jagung manis, daun jeruk cincang, tepung terigu, tepung beras, bawang merah, bawang putih, garam, merica, dan daun bawang dalam sebuah wadah.",
+        "Tambahkan telur untuk mengikat adonan, aduk rata hingga semua bahan tercampur sempurna.",
+        "Ambil sejumput adonan dan bentuk menjadi bulatan pipih.",
+        "Panaskan minyak dalam wajan, goreng perkedel jagung dalam minyak panas hingga berwarna keemasan dan renyah.",
+        "Tiriskan perkedel di atas kertas minyak untuk mengurangi kelebihan minyak.",
+        "Sajikan perkedel jagung daun jeruk selagi hangat, nikmati dengan sambal atau saus favorit."
+    </li></ol>],
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-fritters-with-lime-leaves.jpg",
+    category: "Corn"
+},
     {
-        id: 2,
+        id: 3,
         name: "Pengolahan Kulit Jagung untuk Kerajinan Tangan",
         summary: "Cara membuat kerajinan tangan dari kulit jagung, seperti tas dan dompet",
-        description: "<p>Kulit jagung yang biasanya terbuang begitu saja, ternyata memiliki banyak manfaat...</p>",
-        steps: [
-            "<ol><li>Kumpulkan kulit jagung yang sudah kering.</li>",
-            "<li>Potong kulit jagung sesuai bentuk yang diinginkan (misalnya, bentuk potongan kecil untuk anyaman).</li>",
-            "<li>Rangkai atau anyam kulit jagung menjadi bentuk tas atau dompet.</li>",
-            "<li>Jika perlu, tambahkan aksesoris atau cat untuk memberi warna pada kerajinan.</li>",
-            "<li>Setelah selesai dianyam atau dibentuk, jahit atau rekatkan bagian-bagian tas atau dompet.</li>",
-            "<li>Biarkan kerajinan tangan tersebut kering dan siap digunakan atau dijual.</li></ol>"
-        ],
+        description: "Kulit jagung yang biasanya terbuang begitu saja, ternyata memiliki banyak manfaat. Salah satunya adalah untuk dijadikan kerajinan tangan. Kulit jagung yang telah dikeringkan dapat dianyam atau dibentuk menjadi berbagai macam produk, seperti tas, dompet, atau bahkan perhiasan. Selain itu, kerajinan dari kulit jagung juga ramah lingkungan karena menggunakan bahan alami yang mudah diperoleh.",
+        steps:[<ol><li> 
+            "Kumpulkan kulit jagung yang sudah kering.</li>",
+            "Potong kulit jagung sesuai bentuk yang diinginkan (misalnya, bentuk potongan kecil untuk anyaman).",
+            "angkai atau anyam kulit jagung menjadi bentuk tas atau dompet.",
+            "Jika perlu, tambahkan aksesoris atau cat untuk memberi warna pada kerajinan.",
+            "Setelah selesai dianyam atau dibentuk, jahit atau rekatkan bagian-bagian tas atau dompet.",
+            "Biarkan kerajinan tangan tersebut kering dan siap digunakan atau dijual."
+       </li></ol>],
         imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/kerajinan.jpg",
         category: "Husk"
     },
-    {
-        id: 3,
-        name: "Cara Membuat Jasuke",
-        summary: "Langkah-langkah membuat Jasuke (Jagung Susu Keju) yang lezat dan praktis",
-        description: "<p>Jasuke adalah camilan yang terbuat dari jagung yang telah direbus atau dikukus...</p><p>Berikut adalah langkah-langkah membuat Jasuke yang lezat:</p>",
-        steps: [
-            "<ol><li>Siapkan bahan-bahan: jagung manis (2-3 tongkol), susu kental manis, keju cheddar parut, dan margarin.</li>",
-            "<li>Rebus atau kukus jagung manis hingga matang, lalu serut biji jagung dari tongkolnya.</li>",
-            "<li>Panaskan margarin di wajan, kemudian tambahkan biji jagung yang telah diserut. Aduk hingga merata.</li>",
-            "<li>Pindahkan jagung yang telah hangat ke dalam wadah saji.</li>",
-            "<li>Tuangkan susu kental manis di atas jagung sesuai selera.</li>",
-            "<li>Taburkan keju cheddar parut di atasnya untuk menambahkan rasa gurih.</li>",
-            "<li>Sajikan Jasuke selagi hangat dan nikmati!</li></ol>"
-        ],
-        imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/jasuke.jpg",
-        category: "Corn"
-    }
+   
 ];
 
 module.exports = recoms;
