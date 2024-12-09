@@ -4,7 +4,7 @@ const routes = require('./routes');
 
 const init = async () => {
   const server = Hapi.server({
-    port: process.env.PORT,
+    port: process.env.PORT || 3000, // Tambahkan default port untuk debugging lokal
     host: '0.0.0.0',
   });
 
@@ -16,5 +16,10 @@ const init = async () => {
   await server.start();
   console.log(`Server berjalan pada ${server.info.uri}`);
 };
+
+process.on('unhandledRejection', (err) => {
+  console.error('Unhandled Rejection:', err);
+  process.exit(1);
+});
 
 init();
