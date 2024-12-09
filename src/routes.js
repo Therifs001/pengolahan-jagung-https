@@ -25,13 +25,14 @@ module.exports = [
       const recommendation = recoms.find((recom) => recom.id === parseInt(id, 10));
 
       if (!recommendation) {
-        return h.response({
-          error: true,
-          message: 'Recommendation not found',
-        }).code(404);
+        return h
+          .response({
+            error: true,
+            message: 'Recommendation not found',
+          })
+          .code(404);
       }
 
-      
       const numberedSteps = recommendation.steps.map((step, index) => `${index + 1}. ${step}`);
 
       return {
@@ -39,7 +40,7 @@ module.exports = [
         message: 'Recommendation fetched successfully',
         recommendation: {
           ...recommendation,
-          steps: numberedSteps, 
+          steps: numberedSteps,
         },
       };
     },
