@@ -4,13 +4,13 @@ const routes = require('./routes');
 
 const init = async () => {
   const server = Hapi.server({
-    port: process.env.PORT || 3000, // Tambahkan default port untuk debugging lokal
+    port: process.env.PORT || 3000, 
     host: '0.0.0.0',
   });
 
   await server.register(Inert);
 
-  // Daftar rute
+  
   server.route(routes);
 
   await server.start();
