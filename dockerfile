@@ -17,8 +17,8 @@ RUN npm install --production
 # Salin seluruh source code ke dalam container
 COPY . .
 
-# Ekspos port yang digunakan aplikasi (Cloud Run membutuhkan port 8080)
-EXPOSE 8080
+# Ekspos port yang digunakan aplikasi (Cloud Run membutuhkan port 3000)
+EXPOSE 3000
 
 # Jalankan aplikasi menggunakan npm
 CMD ["npm", "run", "start"]
