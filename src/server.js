@@ -8,13 +8,20 @@ const init = async () => {
     host: '0.0.0.0',
   });
 
+  // Mendaftarkan plugin Inert
   await server.register(Inert);
 
-  
+  // Menambahkan rute
   server.route(routes);
 
-  await server.start();
-  console.log(`Server berjalan pada ${server.info.uri}`);
+  // Menangani kesalahan saat memulai server
+  try {
+    await server.start();
+    console.log(`Server berjalan pada ${server.info.uri}`);
+  } catch (err) {
+    console.error('Gagal memulai server:', err);
+    process.exit(1); // Keluar dari proses jika gagal
+  }
 };
 
 process.on('unhandledRejection', (err) => {
