@@ -1,49 +1,51 @@
-server.route({
-  method: 'GET',
-  path: '/recommendations',
-  handler: (request, h) => {
-      const { active } = request.query;
+const recoms = require('./recoms');
 
-      if (active !== '1' && active !== '0') {
-          return h.response({
-              error: true,
-              message: "Parameter 'active' harus 1 (buah) atau 0 (kulit)"
-          }).code(400);
-      }
-
-      const filteredRecoms = recoms.filter(recom =>
-          (active === '1' && recom.category === 'Corn') ||
-          (active === '0' && recom.category === 'Husk')
-      );
-
-      return {
-          error: false,
-          message: 'Recommendations fetched successfully',
-          listRecoms: filteredRecoms
-      };
-  }
-});
-server.route({
-  method: 'GET',
-  path: '/recommendations/{id}',
-  handler: (request, h) => {
+module.exports = [
+  {
+    method: 'GET',
+    path: '/',
+    handler: (request, h) => ({
+      message: 'Welcome to Pengolahan Jagung!',
+    }),
+  },
+  {
+    method: 'GET',
+    path: '/recommendations',
+    handler: (request, h) => ({
+      error: false,
+      message: 'Recommendations fetched successfully',
+      listRecoms: recoms,
+    }),
+  },
+  {
+    method: 'GET',
+    path: '/recommendations/{id}',
+    handler: (request, h) => {
       const { id } = request.params;
-      const recommendation = recoms.find(recom => recom.id === id);
+      const recommendation = recoms.find((recom) => recom.id === parseInt(id, 10));
 
       if (!recommendation) {
-          return h.response({
-              error: true,
-              message: 'Recommendation not found'
-          }).code(404);
+        return h.response({
+          error: true,
+          message: 'Recommendation not found',
+        }).code(404);
       }
 
+      
+      const numberedSteps = recommendation.steps.map((step, index) => `${index + 1}. ${step}`);
+
       return {
-          error: false,
-          message: 'Recommendation fetched successfully',
-          recommendation
+        error: false,
+        message: 'Recommendation fetched successfully',
+        recommendation: {
+          ...recommendation,
+          steps: numberedSteps, 
+        },
       };
-  }
-});
+    },
+  },
+];
+
 
 
 
