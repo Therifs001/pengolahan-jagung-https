@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Salin package.json dan package-lock.json
 COPY package*.json ./
-
+npm install @hapi/hapi @hapi/inert
 # Install dependencies
 RUN npm install --only=production
 
