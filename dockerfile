@@ -1,23 +1,24 @@
-# Gunakan image Node.js sebagai base
-FROM node:18
+# Gunakan base image Node.js yang stabil
+FROM node:18-slim
 
-# Set direktori kerja di dalam container
-WORKDIR /app
+# Set environment variables
+ENV NODE_ENV=production
+ENV PORT=8080
 
-# Salin package.json dan package-lock.json
+# Tentukan working directory di dalam container
+WORKDIR /usr/src/app
+
+# Salin file package.json dan package-lock.json
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install --only=production
+# Instal dependencies
+RUN npm install --production
 
-# Salin semua file aplikasi
+# Salin seluruh source code ke dalam container
 COPY . .
 
-# Set environment variable PORT ke 3000
-ENV PORT 3000
+# Ekspos port yang digunakan aplikasi (Cloud Run membutuhkan port 8080)
+EXPOSE 8080
 
-# Jalankan aplikasi menggunakan npm run start
+# Jalankan aplikasi menggunakan npm
 CMD ["npm", "run", "start"]
-
-# Expose port 3000
-EXPOSE 3000
