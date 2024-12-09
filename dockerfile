@@ -3,7 +3,7 @@ FROM node:18-slim
 
 # Set environment variables
 ENV NODE_ENV=production
-ENV PORT=8080
+ENV PORT=3000
 
 # Tentukan working directory di dalam container
 WORKDIR /usr/src/app
