@@ -207,7 +207,7 @@ const recoms = [
         "Tiriskan bakwan jagung di atas kertas minyak untuk menghilangkan kelebihan minyak.",
         "Sajikan bakwan jagung selagi hangat sebagai camilan atau pelengkap makan."
     </li></ol>],
-    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-fritters.jpg",
+    imageCover: "https://storage.googleapis.com/cornlabs-cloud.appspot.com/images/corn-fritters.jpg
     category: "Corn"
 },
 {
