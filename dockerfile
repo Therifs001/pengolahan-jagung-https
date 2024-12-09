@@ -7,9 +7,6 @@ WORKDIR /app
 # Salin package.json dan package-lock.json
 COPY package*.json ./
 
-# Set environment variable NODE_ENV ke production
-ENV NODE_ENV=production
-
 # Install dependencies
 RUN npm install --only=production
 
