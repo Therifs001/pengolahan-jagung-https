@@ -1,32 +1,91 @@
 const Hapi = require('@hapi/hapi');
+const fs = require('fs');
+const path = require('path');
+const recoms = require('./recoms'); 
 const Inert = require('@hapi/inert');
-const routes = require('./routes');
 
 const init = async () => {
   const server = Hapi.server({
-    port: process.env.PORT || 3000, 
-    host: '0.0.0.0',
+  port: process.env.PORT || 3000,
+  host: '0.0.0.0', 
+    
   });
 
-  // Mendaftarkan plugin Inert
   await server.register(Inert);
 
-  // Menambahkan rute
-  server.route(routes);
+  // Rute untuk melayani gambar
+  server.route({
+    method: 'GET',
+    path: '/images/{filename}',
+    handler: (request, h) => {
+      const imagesPath = path.join(__dirname, '../images', request.params.filename);
+      return h.file(imagesPath);
+    },
+  });
 
-  // Menangani kesalahan saat memulai server
-  try {
-    await server.start();
-    console.log(`Server berjalan pada ${server.info.uri}`);
-  } catch (err) {
-    console.error('Gagal memulai server:', err);
-    process.exit(1); // Keluar dari proses jika gagal
-  }
+  // Rute untuk root URL
+  server.route({
+    method: 'GET',
+    path: '/',
+    handler: () => ({
+      message: 'Selamat datang di Pengolahan Jagung! Gunakan /recoms untuk melihat rekomendasi.',
+    }),
+  });
+
+  // Rute untuk mendapatkan daftar rekomendasi
+  server.route({
+    method: 'GET',
+    path: '/recoms',
+    handler: (request, h) => {
+      const { active } = request.query;
+
+      if (active !== '1' && active !== '0') {
+        return h.response({
+          error: true,
+          message: "Parameter 'active' harus 1 (buah) atau 0 (kulit)",
+        }).code(400);
+      }
+
+      const filteredRecoms = recoms.filter(
+        (recom) => (active === '1' && recom.category === 'Corn') || (active === '0' && recom.category === 'Husk')
+      );
+
+      return {
+        error: false,
+        message: 'Recommendations fetched successfully',
+        listRecoms: filteredRecoms,
+      };
+    },
+  });
+
+  // Rute untuk mendapatkan detail rekomendasi berdasarkan ID
+  server.route({
+    method: 'GET',
+    path: '/recoms/{id}',
+    handler: (request, h) => {
+      const { id } = request.params;
+        const numericId = Number(id); // Konversi id dari string ke angka
+
+        const recommendation = recoms.find(recom => recom.id === numericId);
+
+      if (!recommendation) {
+        return h.response({
+          error: true,
+          message: 'Recommendation not found',
+        }).code(404);
+      }
+
+      return {
+        error: false,
+        message: 'Recommendation fetched successfully',
+        recommendation: recommendation,
+      };
+    },
+  });
+
+  await server.start();
+  console.log('Server berjalan pada %s', server.info.uri);
 };
 
-process.on('unhandledRejection', (err) => {
-  console.error('Unhandled Rejection:', err);
-  process.exit(1);
-});
-
 init();
+
