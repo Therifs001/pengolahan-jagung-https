@@ -209,7 +209,7 @@ const recoms = [
 },
     {
     id: 21,
-    name: "Bakul dari Daun Jagung",
+    name: "Bakul dari kulit Jagung",
     description: "Bakul daun jagung adalah kerajinan tangan yang menggunakan daun jagung sebagai bahan utama untuk membuat wadah atau keranjang alami. Bakul ini sangat cocok untuk digunakan sebagai tempat penyimpanan atau sebagai hadiah yang unik dan ramah lingkungan.",
     steps: 
         "<b>Langkah-langkah membuat bakul kreatif dari daun jagung</b><br><ol><li>Persiapkan Daun Jagung: Pilih daun jagung yang sudah kering dan cukup lentur. Jika daun jagung terlalu keras, rendam sebentar dalam air hangat untuk melenturkannya.</li><li>Memotong Daun Jagung: Potong daun jagung menjadi beberapa bagian dengan ukuran yang seragam, sekitar 10-15 cm. Daun-daun ini akan digunakan untuk anyaman bakul.</li><li>Membuat Dasar Bakul: Ambil beberapa helai daun jagung dan susun secara melingkar untuk membentuk dasar bakul. Ikat ujung-ujungnya dengan benang atau kawat untuk menyatukan bagian dasar.</li><li>Membuat Dinding Bakul: Setelah dasar selesai, lanjutkan dengan membuat dinding bakul dengan cara melilitkan daun jagung yang sudah dipotong secara vertikal. Anyam daun-daun tersebut secara berputar dan rapatkan setiap lapisan agar dinding bakul kokoh.</li><li>Menambahkan Pegangan: Ambil beberapa helai daun jagung yang lebih panjang, lalu anyam menjadi tali untuk pegangan bakul. Pasang pegangan tersebut pada sisi bakul dengan mengikatnya pada bagian atas.</li><li>Menyelesaikan Bakul: Setelah dinding bakul dan pegangan terpasang dengan baik, rapikan ujung-ujung bakul dan pastikan setiap bagian terikat dengan kuat agar bakul dapat digunakan dengan aman.</li></ol>",
